@@ -89,6 +89,7 @@
     @media (pointer: coarse) {
       .drop-zone, [data-remove-slot], .draggable-chip, .lang-btn { min-height: 44px; }
     }
+      .speaking{outline:3px solid #6366f1;outline-offset:2px;background:#eef2ff!important}
   </style>
 </head>
 <body class="min-h-screen flex flex-col bg-slate-50 text-slate-900">
@@ -1596,6 +1597,89 @@
   "reach": "觸達人數",
   "target audience": "目標受眾"
 };
+Object.assign(ZH_TW, {
+  "👍👎 Pro or Con?": "👍👎 優點還是缺點？",
+  "🎯 When to choose it?": "🎯 何時選用？",
+  "📖 Review all answers": "📖 查看全部答案",
+  "Read the statement. Is it an advantage (Pro) or a limitation (Con) of this strategy?": "閱讀句子，判斷這是此策略的優點（Pro）還是限制（Con）？",
+  "👍 Pro": "👍 優點", "👎 Con": "👎 缺點",
+  "✔ Correct!": "✔ 答對了！", "✘ Not quite.": "✘ 不太對。",
+  "This is an advantage (Pro) of": "這是以下策略的優點：",
+  "This is a limitation (Con) of": "這是以下策略的限制：",
+  "Next ➜": "下一題 ➜", "See results ➜": "查看結果 ➜",
+  "Round complete!": "完成這一輪！",
+  "🏆 Excellent — you know these strategies well!": "🏆 太棒了——你很熟悉這些策略！",
+  "👍 Good effort — check the ones you missed.": "👍 做得不錯——請檢視答錯的題目。",
+  "📚 Keep going — open the Review tab, then try a new round.": "📚 繼續努力——先看「查看全部答案」，再試新一輪。",
+  "Questions to review": "需要複習的題目",
+  "🔄 New round": "🔄 新一輪", "🔄 Play again": "🔄 再玩一次",
+  "Which promotional means is best chosen when the product or business is:": "當產品或業務屬於以下情況時，最適合選用哪種推廣手段？",
+  "You picked": "你選了", "which is best chosen when:": "它最適合在以下情況選用：",
+  "The best answer is": "最佳答案是",
+  "🎙 Voices (Sarah = female, Tom = male)": "🎙 語音設定（Sarah＝女聲，Tom＝男聲）",
+  "Auto (most natural)": "自動（最自然）", "▶ Test voices": "▶ 試聽語音",
+  "Tip: Microsoft Edge or Chrome offer the most natural voices. Choose one marked “Natural” or “Online” if available.": "提示：Microsoft Edge 或 Chrome 提供最自然的語音。如有，請選擇標示「Natural」或「Online」的語音。"
+});
+
+const VID_EXTRA = {
+  "XI2qK1UASxI": [
+    { q: "What is the 'promotional mix' that the video explains?", qz: "影片講解的「推廣組合」是甚麼？",
+      o: ["Only one TV advert shown many times", "A combination of different promotional methods used together", "A list of prices for the menu"], oz: ["只重複播放一則電視廣告", "同時結合使用多種不同的推廣方法", "餐牌上的價目表"], c: 1,
+      e: "Correct! The promotional mix means using several methods together, such as advertising, sales promotions, PR and direct marketing.", ez: "答對了！推廣組合是指同時運用多種方法，例如廣告、銷售推廣、公關及直接營銷。" },
+    { q: "What is 'upselling' at a self-service kiosk?", qz: "自助點餐機上的「追加銷售」（upselling）是甚麼？",
+      o: ["Suggesting extra or larger items so customers spend more", "Giving every customer a free meal", "Lowering all menu prices for one day"], oz: ["建議加購或升級項目，讓顧客花費更多", "為每位顧客提供免費餐點", "一天內調低所有餐牌價格"], c: 0,
+      e: "Great! Upselling encourages customers to add or upgrade items, which raises the amount they spend.", ez: "很好！追加銷售鼓勵顧客加購或升級，從而提高消費金額。" }
+  ],
+  "Mco8vBAwOmA": [
+    { q: "Which four 'Ps' make up the marketing mix?", qz: "市場營銷組合的四個「P」是哪四個？",
+      o: ["People, Profit, Planning, Packaging", "Posters, Prizes, Pamphlets, Prices", "Product, Price, Promotion, Place"], oz: ["人員、利潤、規劃、包裝", "海報、獎品、小冊子、價格", "產品、價格、推廣、地點"], c: 2,
+      e: "Correct! The 4 Ps are Product, Price, Promotion and Place.", ez: "答對了！四個 P 是產品（Product）、價格（Price）、推廣（Promotion）及地點（Place）。" },
+    { q: "How does the hamburger seller change the plan for different customers?", qz: "漢堡包銷售者如何針對不同顧客調整策略？",
+      o: ["By selling in exactly the same way to everyone", "By changing the price and promotion to suit each target market", "By removing the product from sale"], oz: ["以完全相同的方式向所有人銷售", "按每個目標市場調整價格和推廣方式", "停止出售該產品"], c: 1,
+      e: "Right! The same hamburger needs a different price and promotion for a polo club member, a park visitor and a sea captain.", ez: "正確！同一款漢堡包，面對馬球會會員、公園遊客和船長，需要不同的價格和推廣方式。" }
+  ],
+  "ZgQYvu76siE": [
+    { q: "What major risk of celebrity endorsement does the video warn about?", qz: "影片警告名人代言有哪項主要風險？",
+      o: ["The celebrity may become too cheap to hire", "If the celebrity faces allegations or controversy, the brand's image can suffer", "Customers will forget the celebrity's name"], oz: ["名人的代言費可能變得太便宜", "若名人涉及指控或爭議，品牌形象可能受損", "顧客會忘記名人的名字"], c: 1,
+      e: "Correct! Legal or political controversy around the endorser can damage the brand's reputation.", ez: "答對了！代言人涉及法律或政治爭議，可能損害品牌聲譽。" },
+    { q: "What does it mean to 'vet the endorser'?", qz: "「vet the endorser」是甚麼意思？",
+      o: ["Check the person's background carefully before working with them", "Pay the person a bonus after the campaign", "Let the person write the whole advert"], oz: ["合作前仔細審查此人的背景", "活動結束後給予此人獎金", "讓此人撰寫整則廣告"], c: 0,
+      e: "Yes! Vetting means checking an endorser's background and reputation before partnering with them.", ez: "對！審查（vet）是指在合作前查核代言人的背景和聲譽。" }
+  ],
+  "f-C620E4jlw": [
+    { q: "Why do many followers find influencers more believable than celebrities?", qz: "為甚麼許多關注者覺得網絡紅人比名人更可信？",
+      o: ["Influencers are always more famous than celebrities", "Influencers never promote any products", "Influencers feel relatable and engage closely with their followers"], oz: ["網絡紅人一定比名人更有名", "網絡紅人從不推廣任何產品", "網絡紅人予人親切感，並與關注者緊密互動"], c: 2,
+      e: "Correct! Relatability and close engagement make influencers' recommendations feel more trustworthy.", ez: "答對了！親切感和緊密互動，令網絡紅人的推薦更值得信賴。" },
+    { q: "What are many brands doing, according to the video?", qz: "根據影片，不少品牌正在做甚麼？",
+      o: ["Moving some budget from mega-celebrities to social media creators", "Stopping all online advertising", "Hiring only movie stars"], oz: ["把部分預算由超級名人轉投社交媒體創作者", "停止所有網上廣告", "只聘用電影明星"], c: 0,
+      e: "Right! Influencers usually cost less and can deliver strong engagement.", ez: "正確！網絡紅人費用通常較低，卻能帶來高互動。" }
+  ],
+  "xLLgEyiYl64": [
+    { q: "How does product placement work with regular commercials?", qz: "置入式廣告如何配合一般廣告？",
+      o: ["It replaces all commercials", "It is a complementary strategy that reinforces the ads", "It can only be used on billboards"], oz: ["它取代所有廣告", "它是互補策略，能加強廣告效果", "它只能用於廣告牌"], c: 1,
+      e: "Correct! Product placement complements regular ads by reaching viewers inside the show itself.", ez: "答對了！置入式廣告在節目內接觸觀眾，補足一般廣告。" },
+    { q: "Where does a product appear in product placement?", qz: "在置入式廣告中，產品出現在哪裡？",
+      o: ["Inside the content of a TV show or streaming series", "Only during the commercial breaks", "Only on the show's poster"], oz: ["電視節目或串流劇集的內容之中", "只在廣告時段出現", "只出現在節目海報上"], c: 0,
+      e: "Yes! The product is integrated into the show's story or scenes.", ez: "對！產品被融入節目的情節或場景之中。" }
+  ]
+};
+Object.values(VID_EXTRA).flat().forEach(x => { ZH_TW[x.q] = x.qz; ZH_TW[x.e] = x.ez; x.o.forEach((o, i) => { ZH_TW[o] = x.oz[i]; }); });
+Object.assign(ZH_TW, Object.fromEntries(Object.entries({
+  "Bonus practice": "加分練習",
+  "Links to other teaching and learning resources": "其他教學及學習資源連結",
+  "EAII meeting expressions": "EAII 會議用語",
+  "EAII Practice 1": "EAII 練習 1", "EAII Practice 2": "EAII 練習 2", "EAII Practice 3": "EAII 練習 3",
+  "EAII Practice 4": "EAII 練習 4", "EAII Practice 5": "EAII 練習 5",
+  "Sarah & Tom": "Sarah 及 Tom",
+  "promotional mix": "推廣組合", "short-term incentives": "短期優惠", "public relations (PR)": "公共關係（PR）",
+  "target market": "目標市場", "retail price": "零售價", "word of mouth": "口碑", "perceived expertise": "被視為專業",
+  "vet the endorser": "審查代言人", "engagement rate": "互動率", "purchasing power": "購買力",
+  "complementary strategy": "互補策略", "streaming experience": "串流觀看體驗",
+  "tailored": "度身訂造", "upselling": "追加銷售", "discounts": "折扣", "adapt": "調整適應", "credibility": "可信度",
+  "persuade": "說服", "allegations": "指控", "relatable": "具親切感", "believable": "可信", "cheaper": "較便宜",
+  "product placement": "置入式廣告", "integration": "融入整合"
+}).filter(([k]) => !Object.prototype.hasOwnProperty.call(ZH_TW, k))));
+
 
     let tw2cnConverter = null;
     function initOpenCC() {
@@ -1820,36 +1904,235 @@
       });
     })();
 
-    function speakText(text, rate = 0.92, pitch = 1.0) {
-      if (!('speechSynthesis' in window)) {
-        showToast(t("Audio speech is not supported in this browser."));
-        return;
+    // ===== Voices: Sarah = female, Tom = male, best natural voice auto-picked =====
+    const SENT = /[^.!?。！？]+[.!?。！？]*\s*/g;
+    const FEM = /aria|jenny|sonia|libby|maisie|\bmia\b|\bava\b|emma|michelle|samantha|serena|karen|moira|tessa|victoria|allison|susan|zira|hazel|catherine|fiona|kate|stephanie|female|hiugaai|hiumaan|xiaoxiao|xiaoyi|xiaohan|hsiaochen|hsiaoyu|tingting|sinji|sin-ji|yaoyao|huihui/i;
+    const MAS = /\bguy\b|ryan|davis|christopher|\beric\b|thomas|steffan|roger|daniel|\balex\b|oliver|aaron|arthur|\bmark\b|george|james|david|gordon|rishi|\bmale\b|wanlung|yunjian|yunyang|yunxi|zhiwei|kangkang|danny/i;
+    const BADV = /fred|albert|bad news|bahh|bells|boing|bubbles|cellos|deranged|good news|hysterical|junior|organ|princess|ralph|trinoids|whisper|zarvox|superstar|wobble|jester/i;
+    const lsGet = k => { try { return localStorage.getItem(k) || null; } catch (e) { return null; } };
+    state.voiceSel = { female: lsGet("deckVoice_female"), male: lsGet("deckVoice_male") };
+    const vGender = v => (FEM.test(v.name || "") ? "female" : MAS.test(v.name || "") ? "male" : null);
+
+    function vScore(v, role, cjk) {
+      const n = v.name || "", l = (v.lang || "").replace("_", "-").toLowerCase();
+      if (BADV.test(n)) return -999;
+      let sc = 0;
+      if (cjk) {
+        if (!l.startsWith("zh") && !l.startsWith("yue")) return -999;
+        if (state.lang === "hans") sc += l.startsWith("zh-cn") ? 4 : 0;
+        else sc += (l.startsWith("zh-hk") || l.startsWith("yue")) ? 4 : l.startsWith("zh-tw") ? 2 : 0;
+      } else {
+        if (!l.startsWith("en")) return -999;
+        sc += l === "en-gb" ? 4 : (l === "en-us" || l === "en-au" || l === "en-ie") ? 2 : 0;
       }
-      window.speechSynthesis.cancel();
-      const utter = new SpeechSynthesisUtterance(text);
-      const isCJK = trilingualToSpeech(text);
-      utter.lang = isCJK ? (state.lang === "hans" ? "zh-CN" : "zh-HK") : "en-GB";
-      const voices = window.speechSynthesis.getVoices ? window.speechSynthesis.getVoices() : [];
-      const preferred = voices.find(v => {
-        const vl = (v.lang || "").replace("_", "-").toLowerCase();
-        if (isCJK) return vl.startsWith("zh-hk") || vl.startsWith("zh-tw") || vl.startsWith("zh-hant") ? state.lang !== "hans" : vl.startsWith("zh-cn") || vl.startsWith("zh-hans") || vl.startsWith("zh");
-        return vl.startsWith("en-gb") || vl.startsWith("en");
-      });
-      if (preferred) utter.voice = preferred;
-      utter.rate = rate;
-      utter.pitch = pitch;
-      utter.onend = () => {
-        state.speechPlaying = false;
-      };
-      state.speechPlaying = true;
-      window.speechSynthesis.speak(utter);
+      if (/natural|neural|online/i.test(n)) sc += 12;
+      if (/premium|enhanced|siri/i.test(n)) sc += 9;
+      if (/google/i.test(n)) sc += 5;
+      const g = vGender(v);
+      if (g === role) sc += 8; else if (g) sc -= 25;
+      return sc;
     }
 
-    function stopSpeech() {
-      if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel();
+    function pickVoice(role, cjk) {
+      const vs = window.speechSynthesis.getVoices ? window.speechSynthesis.getVoices() : [];
+      const sel = state.voiceSel[role];
+      if (!cjk && sel) { const f = vs.find(v => v.voiceURI === sel); if (f) return f; }
+      let best = null, bs = -500;
+      vs.forEach(v => { const sc = vScore(v, role, cjk); if (sc > bs) { bs = sc; best = v; } });
+      return best;
+    }
+
+    function fillVoiceSelects() {
+      if (!("speechSynthesis" in window)) return;
+      [["selVoiceSarah", "female"], ["selVoiceTom", "male"]].forEach(([id, role]) => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        const vs = (window.speechSynthesis.getVoices() || []).filter(v => vScore(v, role, false) > -900)
+          .sort((x, y) => vScore(y, role, false) - vScore(x, role, false));
+        el.innerHTML = '<option value="">' + tp("Auto (most natural)") + "</option>" +
+          vs.map(v => '<option value="' + v.voiceURI + '"' + (state.voiceSel[role] === v.voiceURI ? " selected" : "") + ">" + v.name + "</option>").join("");
+        el.onchange = () => { state.voiceSel[role] = el.value || null; try { localStorage.setItem("deckVoice_" + role, el.value); } catch (e) {} };
+      });
+    }
+    if ("speechSynthesis" in window) {
+      window.speechSynthesis.getVoices();
+      window.speechSynthesis.onvoiceschanged = fillVoiceSelects;
+    }
+
+    function turnParts(turn, k) {
+      if (/&/.test(turn.speaker)) {
+        const m = turn.text.match(/Sarah:\s*[‘']([\s\S]*?)[’']\s*[—-]+\s*Tom:\s*[‘']([\s\S]*)[’']\s*$/);
+        if (m) return [{ text: m[1], role: "female", turn: k }, { text: m[2], role: "male", turn: k }];
       }
+      return [{ text: turn.text, role: /^Tom/.test(turn.speaker) ? "male" : "female", turn: k }];
+    }
+
+    let speechToken = 0, lastHl = null;
+    function hl(k) {
+      document.querySelectorAll("[data-turn]").forEach(e => e.classList.toggle("speaking", k !== null && k !== undefined && e.dataset.turn === String(k)));
+      if (k !== null && k !== undefined && k !== lastHl) {
+        const el = document.querySelector('[data-turn="' + k + '"]');
+        if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+      lastHl = k;
+    }
+
+    function speakParts(parts, rate = 0.92) {
+      if (!("speechSynthesis" in window)) { showToast(t("Audio speech is not supported in this browser.")); return; }
+      const ss = window.speechSynthesis;
+      ss.cancel();
+      const tok = ++speechToken;
+      state.speechPlaying = true;
+      const jobs = [];
+      parts.forEach(p => (String(p.text).match(SENT) || [String(p.text)]).forEach(x => { if (x.trim()) jobs.push({ text: x.trim(), role: p.role, turn: p.turn }); }));
+      let k = 0;
+      const next = () => {
+        if (tok !== speechToken) return;
+        if (k >= jobs.length) { state.speechPlaying = false; hl(null); return; }
+        const j = jobs[k++];
+        const cjk = trilingualToSpeech(j.text);
+        const u = new SpeechSynthesisUtterance(j.text);
+        const v = pickVoice(j.role, cjk);
+        u.lang = v ? v.lang : (cjk ? (state.lang === "hans" ? "zh-CN" : "zh-HK") : "en-GB");
+        if (v) u.voice = v;
+        u.rate = rate;
+        u.pitch = (v && (vGender(v) || state.voiceSel[j.role])) ? 1 : (j.role === "female" ? 1.12 : j.role === "male" ? 0.88 : 1);
+        u.onend = () => setTimeout(next, /[.!?。！？]$/.test(j.text) ? 160 : 50);
+        u.onerror = () => { if (tok === speechToken) next(); };
+        hl(j.turn);
+        ss.speak(u);
+      };
+      next();
+    }
+    function speakText(text, rate = 0.92) { speakParts([{ text: text, role: "female" }], rate); }
+    function stopSpeech() {
+      speechToken++;
+      if ("speechSynthesis" in window) window.speechSynthesis.cancel();
       state.speechPlaying = false;
+      hl(null);
+    }
+
+    // ===== Strategy Pros & Cons & When to Choose: interactive lab =====
+    state.videoExtra = {};
+    const vidQs = v => [{ q: v.quizQ, o: v.quizOptions, c: v.quizCorrect, e: v.quizExplanation }].concat((VID_EXTRA[v.id] || []).map(x => ({ q: x.q, o: x.o, c: x.c, e: x.e })));
+    const vidGet = (v, k) => k === 0 ? state.videoQuizAnswers[v.id] : state.videoExtra[v.id + ":" + k];
+    function vidBox(v) {
+      const qs = vidQs(v), good = qs.filter((x, k) => vidGet(v, k) === x.c).length;
+      return `<div class="p-4 rounded-2xl bg-white border-2 border-slate-200 space-y-4 shadow-xs">
+        <div class="flex items-center justify-between"><span class="text-xs font-extrabold uppercase tracking-wider text-slate-500">${t("Listening Comprehension Check")}</span><span class="text-xs font-bold text-emerald-700">${good} / ${qs.length} ✔</span></div>
+        ${qs.map((x, k) => { const a = vidGet(v, k); return `<div class="space-y-2">
+          <p class="text-sm font-bold text-slate-900">Q${k + 1}. ${t(x.q)} ${k ? `<span class="ml-1 text-[10px] px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 align-middle">${tp("Bonus practice")}</span>` : `<span class="ml-1 text-[10px] text-emerald-700">${t("+1 pt")}</span>`}</p>
+          ${x.o.map((o, i) => `<button type="button" data-vq="${k}:${i}" class="w-full text-left p-2.5 rounded-xl border-2 text-xs sm:text-sm transition flex items-start gap-2 ${optCls(a !== undefined, i === x.c, i === a)}"><span class="font-bold">${String.fromCharCode(65 + i)}.</span><span>${t(o)}</span></button>`).join("")}
+          ${a !== undefined ? `<div class="p-3 rounded-xl text-xs font-medium ${a === x.c ? "bg-emerald-100 text-emerald-900" : "bg-amber-100 text-amber-900"}">${t(x.e)}</div>` : ""}</div>`; }).join("")}
+      </div>`;
+    }
+    function bindVidQuiz() {
+      const box = document.getElementById("vidQuizBox");
+      if (!box) return;
+      const v = YOUTUBE_VIDEOS[state.activeVideoIndex] || YOUTUBE_VIDEOS[0];
+      box.querySelectorAll("[data-vq]").forEach(b => b.onclick = () => {
+        const [k, i] = b.dataset.vq.split(":").map(Number);
+        if (k === 0) state.videoQuizAnswers[v.id] = i; else state.videoExtra[v.id + ":" + k] = i;
+        box.innerHTML = vidBox(v);
+        bindVidQuiz();
+        const d = document.getElementById("vidDone_" + v.id);
+        if (d) d.classList.toggle("hidden", !vidQs(v).every((x, j) => vidGet(v, j) === x.c));
+        updateGlobalHeader();
+      });
+    }
+    state.proTab = "play"; state.pro = {}; state.when = {};
+    const shuf = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+    const proMsg = (sc, n) => sc / n >= 0.8 ? "🏆 Excellent — you know these strategies well!" : sc / n >= 0.5 ? "👍 Good effort — check the ones you missed." : "📚 Keep going — open the Review tab, then try a new round.";
+    const optCls = (done, isRight, isPicked) => done ? (isRight ? "bg-emerald-100 border-emerald-500 text-emerald-900" : isPicked ? "bg-rose-100 border-rose-500 text-rose-900" : "bg-slate-100 border-slate-200 text-slate-400") : "bg-white border-slate-300 hover:bg-sky-50 hover:border-sky-400";
+
+    function proNewRound(cat) {
+      const pool = [];
+      cat.items.forEach(it => { it.pros.forEach(x => pool.push({ it, x, a: "pro" })); it.cons.forEach(x => pool.push({ it, x, a: "con" })); });
+      const n = Math.min(10, pool.length), h = Math.floor(n / 2);
+      state.pro[cat.slideIndex] = { deck: shuf(shuf(pool.filter(c => c.a === "pro")).slice(0, h).concat(shuf(pool.filter(c => c.a === "con")).slice(0, n - h))), i: 0, ans: [] };
+    }
+    function whenNew(cat) {
+      const others = shuf(ALL_STRATEGIES.filter(x => !cat.items.some(y => y.id === x.id))).slice(0, Math.max(0, 3 - cat.items.length));
+      state.when[cat.slideIndex] = { i: 0, ans: [], qs: shuf(cat.items).map(it => ({ it, opts: shuf(cat.items.concat(others)) })) };
+    }
+
+    function proTabs() {
+      const T = [["play", "👍👎 Pro or Con?"], ["when", "🎯 When to choose it?"], ["review", "📖 Review all answers"]];
+      return '<div class="flex flex-wrap gap-2">' + T.map(([k, l]) => '<button type="button" data-protab="' + k + '" class="px-3 py-1.5 rounded-xl text-xs font-bold border transition ' + (state.proTab === k ? "bg-sky-900 text-white border-sky-900" : "bg-white text-slate-700 border-slate-300 hover:bg-sky-50") + '">' + t(l) + "</button>").join("") + "</div>";
+    }
+
+    function endCard(sc, n, miss, attr, label) {
+      return `<div class="p-4 rounded-2xl bg-white border border-slate-200 space-y-3">
+        <div class="text-lg font-extrabold text-slate-900">${t("Round complete!")} ${sc} / ${n}</div>
+        <p class="text-sm text-slate-700">${t(proMsg(sc, n))}</p>
+        ${miss.length ? `<div class="text-xs font-bold uppercase tracking-wider text-rose-800">${t("Questions to review")}</div><ul class="space-y-1.5 text-xs">${miss.map(m => `<li class="p-2 rounded-lg bg-rose-50 border border-rose-200">${m}</li>`).join("")}</ul>` : ""}
+        <button type="button" ${attr} class="px-4 py-2 rounded-xl bg-sky-700 hover:bg-sky-800 text-white text-xs font-bold">${t(label)}</button></div>`;
+    }
+
+    function proPlay(cat) {
+      if (!state.pro[cat.slideIndex]) proNewRound(cat);
+      const r = state.pro[cat.slideIndex], n = r.deck.length;
+      const sc = r.ans.filter((x, k) => x === r.deck[k].a).length;
+      if (r.i >= n) {
+        const miss = r.deck.map((c, k) => ({ c, k })).filter(o => r.ans[o.k] !== o.c.a)
+          .map(o => `<strong>${t(o.c.it.name)}</strong>: ${t(o.c.x)} → <strong>${o.c.a === "pro" ? "👍 Pro" : "👎 Con"}</strong>`);
+        return endCard(sc, n, miss, "data-pronew", "🔄 New round");
+      }
+      const c = r.deck[r.i], a = r.ans[r.i], done = a !== undefined, ok = a === c.a;
+      const btn = (v, l, hov) => `<button type="button" data-proans="${v}" ${done ? "disabled" : ""} class="flex-1 px-4 py-3 rounded-xl font-extrabold text-sm border-2 transition ${done ? optCls(true, v === c.a, v === a) : "bg-white border-slate-300 " + hov}">${t(l)}</button>`;
+      return `<div class="p-4 rounded-2xl bg-white border border-slate-200 space-y-3">
+        <p class="text-xs text-slate-600">${t("Read the statement. Is it an advantage (Pro) or a limitation (Con) of this strategy?")}</p>
+        <div class="flex items-center gap-3 text-xs font-bold text-slate-600"><span>${r.i + 1} / ${n}</span><div class="flex-1 h-2 rounded-full bg-slate-200 overflow-hidden"><div class="h-2 bg-sky-600" style="width:${((r.i + (done ? 1 : 0)) / n) * 100}%"></div></div><span>${sc} ✔</span></div>
+        <div class="p-4 rounded-xl bg-sky-50 border border-sky-200">
+          <div class="flex items-center justify-between gap-2"><span class="px-2 py-0.5 rounded-md bg-sky-900 text-white text-xs font-bold">${c.it.icon} ${t(c.it.name)}</span><button type="button" data-prospeak class="px-2 py-1 rounded bg-white border border-sky-200 text-xs font-bold" title="Listen">🔊</button></div>
+          <p class="mt-2 text-sm sm:text-base font-semibold text-slate-900 leading-relaxed">“${t(c.x)}”</p>
+        </div>
+        <div class="flex gap-3">${btn("pro", "👍 Pro", "hover:bg-emerald-50 hover:border-emerald-400")}${btn("con", "👎 Con", "hover:bg-rose-50 hover:border-rose-400")}</div>
+        ${done ? `<div class="p-3 rounded-xl text-sm ${ok ? "bg-emerald-50 border border-emerald-300 text-emerald-950" : "bg-rose-50 border border-rose-300 text-rose-950"}"><strong>${t(ok ? "✔ Correct!" : "✘ Not quite.")}</strong> ${t(c.a === "pro" ? "This is an advantage (Pro) of" : "This is a limitation (Con) of")} <strong>${t(c.it.name)}</strong>.</div>
+        <button type="button" data-pronext class="px-4 py-2 rounded-xl bg-sky-700 hover:bg-sky-800 text-white text-xs font-bold">${t(r.i + 1 >= n ? "See results ➜" : "Next ➜")}</button>` : ""}</div>`;
+    }
+
+    function whenView(cat) {
+      if (!state.when[cat.slideIndex]) whenNew(cat);
+      const w = state.when[cat.slideIndex], n = w.qs.length;
+      const sc = w.ans.filter((x, k) => x === w.qs[k].it.id).length;
+      if (w.i >= n) {
+        const miss = w.qs.map((q, k) => ({ q, k })).filter(o => w.ans[o.k] !== o.q.it.id)
+          .map(o => `<strong>${t(o.q.it.name)}</strong>: ${t(o.q.it.bestFor)}`);
+        return endCard(sc, n, miss, "data-whennew", "🔄 Play again");
+      }
+      const q = w.qs[w.i], a = w.ans[w.i], done = a !== undefined, ok = a === q.it.id;
+      const picked = done ? q.opts.find(o => o.id === a) : null;
+      return `<div class="p-4 rounded-2xl bg-white border border-slate-200 space-y-3">
+        <div class="flex items-center gap-3 text-xs font-bold text-slate-600"><span>${w.i + 1} / ${n}</span><div class="flex-1 h-2 rounded-full bg-slate-200 overflow-hidden"><div class="h-2 bg-sky-600" style="width:${((w.i + (done ? 1 : 0)) / n) * 100}%"></div></div><span>${sc} ✔</span></div>
+        <p class="text-xs text-slate-600">${t("Which promotional means is best chosen when the product or business is:")}</p>
+        <div class="p-4 rounded-xl bg-amber-50 border border-amber-200 text-sm sm:text-base font-semibold text-slate-900 leading-relaxed">${t(q.it.bestFor)}</div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">${q.opts.map(o => `<button type="button" data-whenans="${o.id}" ${done ? "disabled" : ""} class="text-left px-3 py-2.5 rounded-xl border-2 text-sm font-semibold transition ${optCls(done, o.id === q.it.id, o.id === a)}">${o.icon} ${t(o.name)}</button>`).join("")}</div>
+        ${done ? `<div class="p-3 rounded-xl text-sm ${ok ? "bg-emerald-50 border border-emerald-300 text-emerald-950" : "bg-rose-50 border border-rose-300 text-rose-950"} space-y-1">
+          <div><strong>${t(ok ? "✔ Correct!" : "✘ Not quite.")}</strong> ${ok ? "" : t("The best answer is") + " "}<strong>${t(q.it.name)}</strong>: ${t(q.it.definition)}</div>
+          ${ok ? "" : `<div class="text-xs">${t("You picked")} <strong>${t(picked.name)}</strong>, ${t("which is best chosen when:")} ${t(picked.bestFor)}</div>`}</div>
+        <button type="button" data-whennext class="px-4 py-2 rounded-xl bg-sky-700 hover:bg-sky-800 text-white text-xs font-bold">${t(w.i + 1 >= n ? "See results ➜" : "Next ➜")}</button>` : ""}</div>`;
+    }
+
+    function proInner(cat) {
+      const body = state.proTab === "review" ? proconReview(cat.items) : state.proTab === "when" ? whenView(cat) : proPlay(cat);
+      return proTabs() + '<div class="mt-3">' + body + "</div>";
+    }
+
+    function bindProcon(cat) {
+      const lab = document.getElementById("proconLab");
+      if (!lab) return;
+      const redo = () => { lab.innerHTML = proInner(cat); bindProcon(cat); };
+      const r = () => state.pro[cat.slideIndex], w = () => state.when[cat.slideIndex];
+      lab.querySelectorAll("[data-protab]").forEach(b => b.onclick = () => { state.proTab = b.dataset.protab; redo(); });
+      lab.querySelectorAll("[data-proans]").forEach(b => b.onclick = () => { if (r().ans[r().i] === undefined) { r().ans[r().i] = b.dataset.proans; redo(); } });
+      lab.querySelectorAll("[data-pronext]").forEach(b => b.onclick = () => { r().i++; redo(); });
+      lab.querySelectorAll("[data-pronew]").forEach(b => b.onclick = () => { proNewRound(cat); redo(); });
+      lab.querySelectorAll("[data-prospeak]").forEach(b => b.onclick = () => speakText(r().deck[r().i].x));
+      lab.querySelectorAll("[data-whenans]").forEach(b => b.onclick = () => { if (w().ans[w().i] === undefined) { w().ans[w().i] = b.dataset.whenans; redo(); } });
+      lab.querySelectorAll("[data-whennext]").forEach(b => b.onclick = () => { w().i++; redo(); });
+      lab.querySelectorAll("[data-whennew]").forEach(b => b.onclick = () => { whenNew(cat); redo(); });
+      lab.querySelectorAll("[data-speak]").forEach(b => b.onclick = () => speakText(b.getAttribute("data-speak"), state.speechRate));
     }
 
     // =========================================================================
@@ -1883,7 +2166,7 @@
                   </p>
                 </div>
                 <button type="button" data-speak="Promotional means. Noun phrase. Methods used to advertise and create awareness for a product, service, or brand." class="shrink-0 inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-sky-700 hover:bg-sky-600 text-white text-xs font-semibold transition">
-                  <span>🔊 Listen</span>
+                  <span>${t("🔊 Listen")}</span>
                 </button>
               </div>
 
@@ -1994,6 +2277,42 @@
           </div>
         </div>
       `;
+    }
+
+    function proconReview(items) {
+      return `<div class="grid grid-cols-1 lg:grid-cols-${items.length} gap-4">
+              ${items.map(item => `
+                <div class="rounded-2xl border border-slate-200 bg-slate-50/70 p-4 flex flex-col justify-between space-y-3 shadow-xs">
+                  <div>
+                    <div class="flex items-center justify-between gap-2">
+                      <div class="flex items-center gap-2">
+                        <span class="text-xl">${item.icon}</span>
+                        <h4 class="font-bold text-slate-900 text-sm sm:text-base">${t(item.name)}</h4>
+                      </div>
+                      <span class="px-2 py-0.5 rounded-md bg-slate-200 text-slate-800 text-xs font-semibold">${t(item.costLevel)}</span>
+                    </div>
+                    <p class="mt-1.5 text-xs text-slate-600">
+                      <strong>${t("Best chosen when:")}</strong> ${t(item.bestFor)}
+                    </p>
+
+                    <div class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
+                      <div class="p-2.5 rounded-xl bg-emerald-50 border border-emerald-200">
+                        <div class="font-bold text-emerald-900 mb-1">${t("👍 Pros (Advantages)")}</div>
+                        <ul class="space-y-1 text-emerald-950">
+                          ${item.pros.map(p => `<li class="flex items-start gap-1"><span>•</span><span>${t(p)}</span></li>`).join("")}
+                        </ul>
+                      </div>
+                      <div class="p-2.5 rounded-xl bg-rose-50 border border-rose-200">
+                        <div class="font-bold text-rose-900 mb-1">${t("👎 Cons (Limitations)")}</div>
+                        <ul class="space-y-1 text-rose-950">
+                          ${item.cons.map(c => `<li class="flex items-start gap-1"><span>•</span><span>${t(c)}</span></li>`).join("")}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              `).join("")}
+            </div>`;
     }
 
     function renderTask2aSlide(catObj) {
@@ -2148,39 +2467,7 @@
               <span class="text-xs text-slate-500">${t("Helps you weigh advantages vs. limitations")}</span>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-${items.length} gap-4">
-              ${items.map(item => `
-                <div class="rounded-2xl border border-slate-200 bg-slate-50/70 p-4 flex flex-col justify-between space-y-3 shadow-xs">
-                  <div>
-                    <div class="flex items-center justify-between gap-2">
-                      <div class="flex items-center gap-2">
-                        <span class="text-xl">${item.icon}</span>
-                        <h4 class="font-bold text-slate-900 text-sm sm:text-base">${t(item.name)}</h4>
-                      </div>
-                      <span class="px-2 py-0.5 rounded-md bg-slate-200 text-slate-800 text-xs font-semibold">${t(item.costLevel)}</span>
-                    </div>
-                    <p class="mt-1.5 text-xs text-slate-600">
-                      <strong>${t("Best chosen when:")}</strong> ${t(item.bestFor)}
-                    </p>
-
-                    <div class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
-                      <div class="p-2.5 rounded-xl bg-emerald-50 border border-emerald-200">
-                        <div class="font-bold text-emerald-900 mb-1">${t("👍 Pros (Advantages)")}</div>
-                        <ul class="space-y-1 text-emerald-950">
-                          ${item.pros.map(p => `<li class="flex items-start gap-1"><span>•</span><span>${t(p)}</span></li>`).join("")}
-                        </ul>
-                      </div>
-                      <div class="p-2.5 rounded-xl bg-rose-50 border border-rose-200">
-                        <div class="font-bold text-rose-900 mb-1">${t("👎 Cons (Limitations)")}</div>
-                        <ul class="space-y-1 text-rose-950">
-                          ${item.cons.map(c => `<li class="flex items-start gap-1"><span>•</span><span>${t(c)}</span></li>`).join("")}
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              `).join("")}
-            </div>
+            <div id="proconLab">${proInner(catObj)}</div>
           </div>
 
           <div class="p-3.5 rounded-2xl bg-amber-50/90 border border-amber-200">
@@ -2345,7 +2632,7 @@
                   class="text-left p-3 rounded-xl border transition flex flex-col justify-between ${isSelected ? 'bg-rose-600 text-white border-rose-700 shadow-md' : 'bg-white hover:bg-slate-50 text-slate-800 border-slate-200'}">
                   <div class="flex items-center justify-between gap-1 text-xs font-bold">
                     <span class="${isSelected ? 'text-rose-100' : 'text-rose-600'}">${t("▶️ Video")} ${idx + 1} (${vid.duration})</span>
-                    ${isDone ? `<span class="px-1.5 py-0.5 rounded bg-emerald-500 text-white text-[10px]">${t("✓ Done")}</span>` : ''}
+                    <span id="vidDone_${vid.id}" class="px-1.5 py-0.5 rounded bg-emerald-500 text-white text-[10px] ${vidQs(vid).every((x, j) => vidGet(vid, j) === x.c) ? '' : 'hidden'}">${t("✓ Done")}</span>
                   </div>
                   <div class="mt-1.5 font-bold text-xs line-clamp-2">${t(vid.title)}</div>
                 </button>
@@ -2390,43 +2677,14 @@
                   <div class="flex flex-wrap gap-1.5">
                     ${currentVid.keyVocab.map(kw => `
                       <button type="button" data-speak="${kw}" class="px-2.5 py-1 rounded-lg bg-white hover:bg-sky-100 text-sky-900 border border-sky-300 text-xs font-semibold transition">
-                        🔊 ${kw}
+                        🔊 ${termLabel(kw)}
                       </button>
                     `).join("")}
                   </div>
                 </div>
               </div>
 
-              <div class="p-4 rounded-2xl bg-white border-2 border-slate-200 space-y-3 shadow-xs">
-                <div class="flex items-center justify-between">
-                  <span class="text-xs font-extrabold uppercase tracking-wider text-slate-500">${t("Listening Comprehension Check")}</span>
-                  <span class="text-xs font-bold text-emerald-700">${t("+1 pt")}</span>
-                </div>
-                <p class="text-sm font-bold text-slate-900">${t(currentVid.quizQ)}</p>
-                <div class="space-y-2">
-                  ${currentVid.quizOptions.map((opt, oIdx) => {
-                    const isPicked = userAns === oIdx;
-                    const isRight = oIdx === currentVid.quizCorrect;
-                    let btnClass = "border-slate-200 bg-slate-50 hover:bg-sky-50 text-slate-800";
-                    if (userAns !== undefined) {
-                      if (isRight) btnClass = "border-emerald-500 bg-emerald-50 text-emerald-950 font-bold";
-                      else if (isPicked && !isRight) btnClass = "border-rose-500 bg-rose-50 text-rose-950";
-                    }
-                    return `
-                      <button type="button" data-vid-quiz="${currentVid.id}" data-vid-opt="${oIdx}"
-                        class="w-full text-left p-2.5 rounded-xl border-2 text-xs sm:text-sm transition flex items-start gap-2 ${btnClass}">
-                        <span class="font-bold">${String.fromCharCode(65 + oIdx)}.</span>
-                        <span>${t(opt)}</span>
-                      </button>
-                    `;
-                  }).join("")}
-                </div>
-                ${userAns !== undefined ? `
-                  <div class="p-3 rounded-xl text-xs font-medium ${userAns === currentVid.quizCorrect ? 'bg-emerald-100 text-emerald-900' : 'bg-amber-100 text-amber-900'}">
-                    ${t(currentVid.quizExplanation)}
-                  </div>
-                ` : ''}
-              </div>
+              <div id="vidQuizBox">${vidBox(currentVid)}</div>
             </div>
           </div>
         </div>
@@ -2465,6 +2723,16 @@
             </div>
           </div>
 
+          <details class="text-xs bg-slate-50 border border-slate-200 rounded-xl px-3 py-2">
+            <summary class="cursor-pointer font-semibold text-slate-700">${t("🎙 Voices (Sarah = female, Tom = male)")}</summary>
+            <div class="mt-2 flex flex-wrap items-center gap-3">
+              <label class="flex items-center gap-1.5">👩‍💼 Sarah <select id="selVoiceSarah" class="border border-slate-300 rounded-lg px-2 py-1 bg-white max-w-[14rem]"></select></label>
+              <label class="flex items-center gap-1.5">👨‍💼 Tom <select id="selVoiceTom" class="border border-slate-300 rounded-lg px-2 py-1 bg-white max-w-[14rem]"></select></label>
+              <button type="button" id="btnTestVoices" class="px-3 py-1.5 rounded-lg bg-indigo-600 text-white font-bold">${t("▶ Test voices")}</button>
+            </div>
+            <p class="mt-1.5 text-slate-500">${t("Tip: Microsoft Edge or Chrome offer the most natural voices. Choose one marked “Natural” or “Online” if available.")}</p>
+          </details>
+
           <div class="grid grid-cols-2 sm:grid-cols-5 gap-2.5">
             ${[
               { name: "Target audience", icon: "🎯", desc: "Who are we trying to engage?" },
@@ -2484,13 +2752,13 @@
           </div>
 
           <div class="space-y-4">
-            ${TASK2B_DIALOGUE.map(turn => {
+            ${TASK2B_DIALOGUE.map((turn, ti) => {
               const q = turn.question;
               const picked = q ? state.task2bAnswers[q.qId] : null;
               const isRight = q && picked === q.correctAnswer;
 
               return `
-                <div class="p-4 rounded-2xl border border-slate-200 bg-white shadow-xs space-y-3">
+                <div data-turn="${ti}" class="p-4 rounded-2xl border border-slate-200 bg-white shadow-xs space-y-3">
                   <div class="flex items-start justify-between gap-3">
                     <div class="flex items-start gap-3">
                       <div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-xl shrink-0">
@@ -2498,7 +2766,7 @@
                       </div>
                       <div>
                         <div class="flex items-center gap-2">
-                          <span class="font-bold text-slate-900 text-sm">${turn.speaker}</span>
+                          <span class="font-bold text-slate-900 text-sm">${turn.speaker === "Sarah & Tom" ? t(turn.speaker) : turn.speaker}</span>
                           <span class="text-xs text-slate-500">(${t(turn.role)})</span>
                         </div>
                         <p class="mt-1 text-sm text-slate-800 leading-relaxed">
@@ -2506,7 +2774,7 @@
                         </p>
                       </div>
                     </div>
-                    <button type="button" data-speak="${turn.speaker} says: ${turn.text}" class="shrink-0 px-2.5 py-1.5 rounded-lg bg-slate-100 hover:bg-indigo-100 text-slate-700 hover:text-indigo-900 text-xs font-semibold transition" title="${tp("Listen to this line")}">
+                    <button type="button" data-speak-turn="${ti}" class="shrink-0 px-2.5 py-1.5 rounded-lg bg-slate-100 hover:bg-indigo-100 text-slate-700 hover:text-indigo-900 text-xs font-semibold transition" title="${tp("Listen to this line")}">
                       ${t("🔊 Listen")}
                     </button>
                   </div>
@@ -2759,6 +3027,19 @@
       const stage = document.getElementById("slideStage");
       if (!stage) return;
 
+      if (document.getElementById("proconLab")) bindProcon(TASK2A_CATEGORIES[state.currentSlide - 1]);
+      stage.querySelectorAll("[data-speak-turn]").forEach(b => b.addEventListener("click", e => {
+        e.stopPropagation();
+        const k = +b.dataset.speakTurn;
+        speakParts(turnParts(TASK2B_DIALOGUE[k], k), state.speechRate);
+      }));
+      fillVoiceSelects();
+      bindVidQuiz();
+      const btnTV = document.getElementById("btnTestVoices");
+      if (btnTV) btnTV.addEventListener("click", () => speakParts([
+        { text: "Hi Tom, it’s Sarah. Shall we plan our product launch?", role: "female" },
+        { text: "Hi Sarah, great idea. Let’s get started!", role: "male" }], state.speechRate));
+
       stage.querySelectorAll("[data-goto]").forEach(btn => {
         btn.addEventListener("click", () => {
           goToSlide(parseInt(btn.getAttribute("data-goto"), 10));
@@ -2914,8 +3195,7 @@
       const btnPlayFull = document.getElementById("btnPlayFullDialogue");
       if (btnPlayFull) {
         btnPlayFull.addEventListener("click", () => {
-          const fullScript = TASK2B_DIALOGUE.map(turn => `${turn.speaker} says: ${turn.text}`).join(" ... ");
-          speakText(fullScript, 0.92);
+          speakParts(TASK2B_DIALOGUE.flatMap((turn, k) => turnParts(turn, k)), state.speechRate);
           showToast(t("Playing Sarah & Tom's dialogue audio..."));
         });
       }
@@ -2997,7 +3277,7 @@
         btnResetAll.addEventListener("click", () => {
           state.task2aPlacements = {};
           state.task2aChecked = {};
-          state.videoQuizAnswers = {};
+          state.videoQuizAnswers = {}; state.videoExtra = {};
           state.task2bAnswers = {};
           state.scenarioAnswers = {};
           state.selectedChipId = null;
